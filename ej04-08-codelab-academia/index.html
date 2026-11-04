@@ -326,13 +326,28 @@
                     <!--Botones de abajo-->
                     <div class="modal-footer">
                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                         <a href="#contacto" class="btn btn-primary">Ir al formulario</a>
+                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setTimeout(function(){ document.getElementById('nombre').focus(); }, 400);">Ir al formulario</button>
                     </div>
                </div>
      </div>"
 
      <!-- ===== EJ. 8 · FOOTER CON ICONOS ===== -->
+     <footer class="bg-dark text-white py-5 mt-5">
+          <div class="container text-center">
+               <h3 class="fw-bold mb-3">CodeLab Academia</h3>
+               <p class="text-secondary mb-4">Aprende a programar desde cero con proyectos reales</p>
 
+               <!-- Iconos de redes sociales -->
+               <div class="mb-4">
+                    <a href="https://github.com/alexwillians27" class="text-white fs-3 me-3" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white fs-3 me-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white fs-3"><i class="bi bi-linkedin"></i></a>
+               </div>
+
+               <hr class="border-secondary">
+               <p class="text-secondary mb-0">&copy; 2026 CodeLab Academia. Todos los derechos reservados.</p>
+          </div>
+     </footer>
 
      <!-- Botón para volver al índice del proyecto (puedes dejarlo) -->
      <a href="../index.html" class="btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3 z-3">← Índice</a>
