@@ -20,7 +20,7 @@
           Lee ENUNCIADO.md. Rellena cada sección en su hueco.
           ============================================================ -->
           <!-- Enlaace accesibilidad  para contenido principal -->
-           <a href="#sobre-mi" class="visually-hidden-focusable p-3 bg-primary text-white text-decoration-none">Saltar al contenido principal</a>
+          <a href="#sobre-mi" class="visually-hidden-focusable p-3 bg-primary text-white text-decoration-none">Saltar al contenido principal</a>
 
      <!-- ===== NAVBAR =====
           Tu nombre/logo + enlaces: Sobre mí (#sobre-mi) · Habilidades (#habilidades)
@@ -161,11 +161,160 @@
           Mínimo 3 cards: captura (img/), descripción, badges de tecnologías,
           botones "Demo" y "Código" (GitHub). Idea JS: modal con el detalle -->
 
+          <section id="proyecyos" class="py-5">
+               <div class="container"
+               <h2 class="text-center mb-5 fw-bold">Proyectos Destacados</h2>
+               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                    <!-- Proyecto 1 ClickAnt!! -->
+                    <div class="col">
+                         <div class="card h-100 border-0 shadow-sm">
+                              <!-- Imagen del proyecto -->
+                              <img src="img/clickant-logo.jpg" class="card-img-top" alt="Pantalla de inicio del jeugo ClickAnt!">
+                              <div class="card-doby d-flex flex-column">
+                                   <h3 class="h5 card-tittle fw-bold">ClickAnt!</h3>
+                                   <p class="card-text text-secondary flex-grow-1">Juego arcade hypercasual formato PWA. Desarrollado en equipo, integrando mecánicas ágiles con un backend robusto y base de datos realcional.</p>
+                                   <div class="mb-3">
+                                        <span class="badge text-bg-primary">React</span>
+                                        <span class="badge text-bg-dark">Next.js</span>
+                                        <span class="badge text-bg-success">Node.js</span>
+                                        <span class="badge text-bg-danger">Oracle DB</span>
+                                   </div>
+
+                                   <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-primary flex-grow-1" target="_blank" rel="noopener">Demo</a>
+                                        <a href="https://github.com/alexwillians27/ClickAnt" class="btn btn-outline-dark flex-grow-1" target="_blank" rel="noopener"><i class="bi bi-github me-1" aria-hidden="true"></i>Código</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- Proyecto 2: Dashboard de Telemetría -->
+                    <div class="col">
+                         <div class="card h-100 border-0 shadow-sm">
+                              <img src="img/telemetria-logo.jpg" class="card-img-top" alt="Dashboard con gráficos de velocidad en tiempo real">
+                              <div class="card-body d-flex flex-column">
+                                   <h3 class="h5 card-title fw-bold">Dashboard Telemetría</h3>
+                                   <p class="card-text text-secondary flex-grow-1">Sistema de telemetría en tiempo real para simuladores. Recibe paquetes UDP y renderiza los datos en un dashboard web interactivo.</p>
+                                   <div class="mb-3">
+                                        <span class="badge text-bg-danger">Java</span>
+                                        <span class="badge text-bg-warning text-dark">WebSockets</span>
+                                        <span class="badge text-bg-info text-white">HTML/CSS</span>
+                                   </div>
+                                   <div class="d-flex gap-2">
+                                        <!-- REQUISITO JS: Este botón abre el modal -->
+                                        <button type="button" class="btn btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalTelemetria">Detalles</button>
+                                        <a href="https://github.com/alexwillians27" class="btn btn-outline-dark flex-grow-1" target="_blank" rel="noopener"><i class="bi bi-github me-1" aria-hidden="true"></i>Código</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Proyecto 3: EcoDeliver UI/UX -->
+                    <div class="col">
+                         <div class="card h-100 border-0 shadow-sm">
+                              <img src="img/EcoDeliver_logo.png" class="card-img-top" alt="Vistas de la interfaz móvil de EcoDeliver">
+                              <div class="card-body d-flex flex-column">
+                                   <h3 class="h5 card-title fw-bold">EcoDeliver UI/UX</h3>
+                                   <p class="card-text text-secondary flex-grow-1">Diseño de interfaz para un servicio de paquetería ecológica en Sevilla. Creación de sistema de diseño y flujos de pantallas (Figma/Penpot).</p>
+                                   <div class="mb-3">
+                                        <span class="badge text-bg-primary">Figma</span>
+                                        <span class="badge text-bg-dark">Penpot</span>
+                                        <span class="badge text-bg-secondary">Diseño UI</span>
+                                   </div>
+                                   <div class="d-flex gap-2">
+                                        <a href="https://www.figma.com/design/ddTJXHLVFqLmO6JUPWuqTL/DIW_P1_Alejandro_Manche%C3%B1o_Gonzalez" class="btn btn-primary flex-grow-1" target="_blank" rel="noopener">Ver Prototipo</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- MODAL PARA EL PROYECTO 2 (Se abre al pulsar "Detalles") -->
+     <div class="modal fade" id="modalTelemetria" tabindex="-1" aria-labelledby="modalTelemetriaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+               <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                         <h4 class="modal-title fw-bold" id="modalTelemetriaLabel">Dashboard de Telemetría Racing</h4>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar detalles del proyecto"></button>
+                    </div>
+                    <div class="modal-body">
+                         <img src="img/telemetria-logo.jpg" class="img-fluid rounded mb-3" alt="Arquitectura del sistema de telemetría">
+                         <p>Este proyecto captura paquetes de telemetría UDP enviados por un simulador de conducción y los procesa mediante un servidor backend en Java. Los datos de velocidad, revoluciones y marchas se emiten vía WebSockets a un frontend, donde se actualizan en tiempo real sin recargar la página, almacenando el histórico de vueltas en una base de datos Oracle.</p>
+                    </div>
+                    <div class="modal-footer border-0 pt-0">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+                    
 
      <!-- ===== FORMACIÓN Y EXPERIENCIA (id="formacion") =====
           CFGS DAW, prácticas (FFEOE), cursos, certificaciones.
           Idea: list-group o accordion -->
 
+          <section id="formation" class="py-5 bg-body-tertiary">
+               <div class="container">
+                    <h2 class="text-center mb-5 fw-bold">Formación y Experiencia</h2>
+                    <div class="row justify-content-center">
+                         <div class="col-lg-8">
+
+                              <!--Acordeon de bootstrapp-->
+                              <div class="accordion shadow-sm" id="acordeonExperiencia">
+                                   <!--Item 1: -->
+                                   <div class="accordion-item border-0 border-bottom">
+                                        <!--Jerarquia-->
+                                        <h3 class="accordion-header" id="headingUno">
+                                             <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                                                  <i class="bi bi-mortarboard-fill text-primary me-3"></i>Técnico Superior en Desarrollo de Aplicaciones Web (DAW) - Davante Medac, Sevilla (2025-2027).
+                                             </button>
+                                        </h3>
+                                        <div id="collapseUno" class="accordion-collapse collapse show" aria-labelledby="headingUno" data-bs-parent="#acordeonExperiencia">
+                                             <div class="accordion-body text-secondary">
+                                                  <strong>Instituto Medac (sevilla)</strong> | <em>2025-Presente</em><br><br>
+                                                  Formación integral en desarrollo de software, abarcando desde el diseño de interfaces (UI/UX) y maquetación web, hasta la programación backend, despliegue en servidores web y administración de bases de datos. Aprendizaje basado en la creación de proyectos prácticos y reales.
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!--Item 2: -->
+                                   <div class="accordion-item border-0 border-bottom">
+                                        <h3 class="accordion-header" id="headingDos">
+                                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+                                                  <i class="bi bi-rocket-takeoff-fill text-primary me-3"></i> Prácticas en Empresa (FCT) - En búsqueda
+                                             </button>
+                                        </h3>
+                                        <div id="collapseDos" class="accordion-collapse collapse" aria-labelledby="headingDos" data-bs-parent="#acordeonExperiencia">
+                                             <div class="accordion-body text-secondary">
+                                                  <strong>Marzo 2027</strong><br><br>
+                                                  Actualmente en búsqueda activa de una empresa del sector tecnológico para realizar el periodo de Formación en Centros de Trabajo (FCT). Especialmente interesado en oportunidades de desarrollo remoto o híbrido, donde pueda aportar valor escribiendo código limpio y seguir creciendo profesionalmente.
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Item 3: Experiencia previa -->
+                                   <div class="accordion-item border-0">
+                                        <h3 class="accordion-header" id="headingTres">
+                                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                                                  <i class="bi bi-briefcase-fill text-primary me-3"></i> Encargado y Operario - GARDA IMPORT
+                                             </button>
+                                        </h3>
+                                        <div id="collapseTres" class="accordion-collapse collapse" aria-labelledby="headingTres" data-bs-parent="#acordeonExperiencia">
+                                             <div class="accordion-body text-secondary">
+                                                  <strong>GARDA IMPORT</strong> | <em>Experiencia previa</em><br><br>
+                                                  Desempeño de diversos roles incluyendo operario, repartidor y encargado. Esta experiencia me ha dotado de una fuerte ética de trabajo, capacidad de adaptación, habilidades de resolución de problemas bajo presión y gestión de equipos; competencias transversales clave que ahora aplico en el desarrollo de software.
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div> <!-- /accordion -->
+                         </div>
+                    </div>
+               </div>
+          </section>
 
      <!-- ===== CONTACTO (id="contacto") =====
           Formulario con validación (nombre, email, asunto, mensaje)
