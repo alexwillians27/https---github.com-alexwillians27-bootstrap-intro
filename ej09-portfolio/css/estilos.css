@@ -15,3 +15,16 @@ html { scroll-behavior: smooth; }
 
 /* Que el título de cada sección no quede tapado por la navbar fija */
 section { scroll-margin-top: 70px; }
+
+/* css/estilos.css */
+:root {
+  /* Sobrescribimos el color primario de Bootstrap (Azul) por un Turquesa */
+  --bs-primary: #20c997; 
+  --bs-primary-rgb: 32, 201, 151;
+}
+
+/* Ajuste fino para la imagen de portada */
+#sobre-mi img {
+  border: 4px solid var(--bs-primary);
+  padding: 5px;
+}
