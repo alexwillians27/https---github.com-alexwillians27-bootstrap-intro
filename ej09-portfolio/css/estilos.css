@@ -4,13 +4,18 @@
    ============================================================ */
 
 :root {
-  /* Oscurecemos el turquesa para que pase los test de contraste WCAG AA */
-  --bs-primary: #128260; 
-  --bs-primary-rgb: 18, 130, 96;
-  
-  /* Ajustamos también el color de los enlaces para que contraste más */
-  --bs-link-color: #128260;
-  --bs-link-hover-color: #0d6349;
+  /* Verde turquesa brillante */
+  --bs-primary: #20c997; 
+  --bs-primary-rgb: 32, 201, 151;
+  --bs-link-color: #20c997;
+  --bs-link-hover-color: #1aa179;
+}
+
+/* Forzamos el texto negro en botones e insignias para pasar el validador WAVE */
+.btn-primary, .badge.text-bg-primary, .bg-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #000000 !important; 
 }
 
 /* Desplazamiento suave al pulsar los enlaces del menú */
