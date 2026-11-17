@@ -85,3 +85,8 @@ section { scroll-margin-top: 70px; }
     border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   }
 }
+
+/* Arreglo definitivo de contraste para pasar el test WAVE en modo oscuro */
+.text-secondary, .text-muted {
+    color: #e9ecef !important; /* Forzamos un gris mucho más clarito que aprueba de sobra */
+}
