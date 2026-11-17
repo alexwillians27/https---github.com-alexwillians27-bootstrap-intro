@@ -66,7 +66,9 @@ section { scroll-margin-top: 70px; }
 .titulo-fondo {
   font-size: 4rem;
   letter-spacing: 5px;
-  color: rgba(255, 255, 255, 0.03); /* Gris muy transparente para el tema oscuro */
+  /* TRUCO PARA WAVE: Color sólido legal (gris) + opacidad separada */
+  color: #adb5bd; 
+  opacity: 0.05; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
