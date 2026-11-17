@@ -42,16 +42,17 @@ A continuación, se presentan las evidencias de que el código está optimizado,
 *(Las imágenes se encuentran en el directorio `/docs/evidencias/`)*
 
 *   **Lighthouse (Accesibilidad, Rendimiento, SEO y Buenas Prácticas):**
-    ![Auditoría Lighthouse](docs/evidencias/lighthouse.jpg)
+    ![Auditoría Lighthouse](docs/evidencias/lighthouse.png)
 
 *   **WAVE (Accesibilidad Web):**
-    ![Evaluación WAVE](docs/evidencias/wave.jpg)
+    ![Evaluación WAVE](docs/evidencias/wave.png)
+        !!!*Permanece un error de contraste por un texto que solo esta de forma decorativa*!!!
 
 *   **Validador HTML (W3C):**
-    ![Validación HTML](docs/evidencias/w3c-html.jpg)
+    ![Validación HTML](docs/evidencias/w3c-html.png)
 
 *   **Validador CSS (W3C):**
-    ![Validación CSS](docs/evidencias/w3c-css.jpg)
+    ![Validación CSS](docs/evidencias/w3c-css.png)
 
 ## Declaración de uso de Inteligencia Artificial
 
