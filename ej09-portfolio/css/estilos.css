@@ -23,8 +23,57 @@ section { scroll-margin-top: 70px; }
   --bs-primary-rgb: 32, 201, 151;
 }
 
+/* Ajuste fino para centrar la cara dentro del avatar circular */
+#sobre-mi img.rounded-circle {
+  object-fit: cover;
+  object-position: right 20%;
+  object-position: center 7%; /* Desplaza la cámara ligeramente hacia arriba (prueba entre 10% y 25%) */
+  
+}
+
 /* Ajuste fino para la imagen de portada */
 #sobre-mi img {
   border: 4px solid var(--bs-primary);
   padding: 5px;
+}
+
+/* ===== ESTILOS PORTADA TIPO SIMONE ===== */
+#sobre-mi {
+  /* Sustituye 'fondo-portada.jpg' por la imagen que hayas subido a tu carpeta img/ */
+  background-image: url('../img/3.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efecto parallax chulo al hacer scroll */
+}
+
+/* Animación de parpadeo para el cursor de la máquina de escribir */
+@keyframes parpadeo {
+  50% { border-color: transparent !important; }
+}
+#maquina-escribir {
+  animation: parpadeo 0.8s step-end infinite;
+}
+
+/* ===== ESTILOS SECCIÓN CONÓCEME ===== */
+.titulo-fondo {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.03); /* Gris muy transparente para el tema oscuro */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* Hacemos la fuente aún más gigante en pantallas de ordenador */
+@media (min-width: 768px) {
+  .titulo-fondo {
+    font-size: 7.5rem;
+    letter-spacing: 10px;
+  }
+  
+  /* Borde para la tercera estadística en PC */
+  .border-end-md {
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
 }
